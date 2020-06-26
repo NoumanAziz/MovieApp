@@ -1,0 +1,40 @@
+
+
+.rmdb-movieinfobarrrr {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 81%;
+  background-color: rgba(0, 0, 0, 0.448);
+  color: white;
+  margin : 7px auto;
+  border-radius: 20px;
+  
+}
+
+@media screen and (max-width: 750px) {
+  .rmdb-movieinfobarrrr {
+    font-size: 13px;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .rmdb-movieinfobarrrr {
+    font-size: 12px;
+    width: 90%;
+    
+  }
+p{
+    margin-left: 7px;
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .fa-time, .fa-revenue, .fa-budget {
+    display: none;
+    
+  }
+}
+
+

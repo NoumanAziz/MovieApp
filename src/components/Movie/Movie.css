@@ -1,0 +1,41 @@
+.rmdb-movie {
+  margin-bottom: 100px;
+}
+.rmdb-movie > h1{
+  color : white;
+  font-weight: 300;
+  font-size: 22px;
+  background-color: rgba(15, 15, 15, 0.863);
+  border-radius: 20px;
+  width: 170px;
+  text-align: center;
+  height: 27px;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.rmdb-home-grid {
+  background-color: rgb(54, 52, 52);
+  max-width: 81%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .rmdb-movie > h1{
+
+    font-size: 20px;
+    width: 150px;
+   
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .rmdb-movie > h1{
+    font-weight: 200;
+    font-size: 16px;
+    width: 130px;
+    height: 20px;
+  
+}
+}

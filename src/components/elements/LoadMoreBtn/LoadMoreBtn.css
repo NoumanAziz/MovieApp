@@ -1,0 +1,43 @@
+.rmdb-loadmorebtn {
+  background-color: rgb(15, 15, 15);
+  width: 200px;
+  height: 50px;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  justify-self: center;
+  margin: 18px auto;
+  color: rgb(7, 7, 7);
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 40px;
+
+ 
+}
+
+.loader{
+  position: relative;
+  animation: myfirst 1.7s linear infinite ;
+}
+
+@keyframes myfirst {
+  0%   {color:rgb(12, 12, 12); top : -20px   }
+  14.3% {color:rgb(243, 241, 241); top:-10px }
+  29% {color:rgb(255, 251, 251); top: 2px }
+  43% {color:rgb(19, 18, 18); top: -2px }
+  57% {color:rgb(184, 182, 182); top: 2px }
+  71% {color:rgb(238, 236, 236); top: -2px }
+  85% {color:rgb(224, 222, 222); top: 2px }
+  100% {color:rgb(175, 174, 174); top: 30px }
+}
+
+.rmdb-loadmorebtn p {
+  font-family: 'Abel', sans-serif;
+  font-size:42px;
+  padding: 20px;
+}
+
+.rmdb-loadmorebtn:hover {
+  opacity: 0.8;
+  
+}

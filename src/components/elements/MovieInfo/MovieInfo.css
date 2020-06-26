@@ -1,0 +1,230 @@
+.rmdb-movieinfo {
+  background-size: cover !important;
+  background-position: center !important;
+  width: 100%;
+  height: 650px;
+ 
+  box-sizing: border-box;
+  animation: animateMovieinfo 1s;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+@keyframes animateMovieinfo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.rmdb-movieinfo-content {
+ 
+ width: 81%;
+  height: 480px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background: rgb(0, 0, 0, 0.7);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  padding: 0px;
+}
+
+.rmdb-movieinfo-thumb {
+  width: 320px;
+  height: 430px;
+  padding: 0px;
+  float: left;
+  border-radius: 20px;
+
+}
+
+.rmdb-movieinfo-text {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-right: 20px;
+  color: #fff;
+  /* display: flex;
+  flex-direction: column;
+justify-items: center;
+justify-content: center; */
+  overflow: hidden;
+
+  height: 100%;
+}
+.movie-plot{
+
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  justify-content: center;
+  overflow: hidden;
+
+
+}
+.half-plot{
+  display: none;
+}
+.rmdb-movieinfo-text h1 {
+  font-family: 'Abel', sans-serif;
+  font-size: 38px;
+  margin: 0 0 ;
+}
+
+
+.rmdb-movieinfo-text h3 {
+  font-size: 16px;
+  line-height: 0;
+  margin-top: 10px;
+ 
+}
+
+.movie-plot h3 {
+  font-size: 16px;
+  line-height: 0;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.rmdb-movieinfo-text p {
+  font-family: 'Abel', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.above-top{
+  width:  85%;
+
+/* margin-top: 80px; */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  
+ 
+
+  /* justify-content: space-around; */
+}
+.imdb-div{
+  width:  fit-content;
+
+}
+.circle-bar{
+  width: 70px;
+  height: 70px;
+}
+.director-div{
+ width:  fit-content;
+ margin-left: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+  .rmdb-movieinfo-text h1 {
+    font-size: 30px !important;
+  }
+  .movie-plot{
+    font-size: 8px;
+  }
+  .full-plot{
+    display: none;
+  }
+  .half-plot{
+    display: block;
+  }
+  .circle-bar{
+    width: 60px;
+    height: 60px;
+  }
+ 
+  .movie-plot{
+
+    height: 57%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  /* .rmdb-movieinfo {
+    min-height: 500px;
+    height: auto;
+  } */
+  .rmdb-movieinfo-text h1 {
+    font-size: 26px !important;
+  }
+  .movie-plot{
+    font-size: 7px;
+  }
+  .full-plot{
+    display: none;
+  }
+  .half-plot{
+    display: block;
+    font-weight: 200;
+   
+  }
+
+  .fa-film {
+    display: none;
+  }
+
+  .rmdb-movieinfo-thumb {
+   display: none;
+  
+  }
+  
+  /* .rmdb-movieinfo-text {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+    color: #fff;
+    overflow: hidden;
+  } */
+.imdb-div h3{
+  font-weight: 200;
+
+  
+}
+.circle-bar{
+  width: 50px;
+  height: 50px;
+}
+.director-div h3{
+  font-weight: 200;
+
+}
+.rmdb-movieinfo-text {
+  padding: 10px;
+}
+.rmdb-movieinfo-content {
+  width: 90%;
+}
+.movie-plot{
+
+  height: 62%;
+}
+}
+@media screen and (max-width: 430px) {
+  /* .rmdb-movieinfo {
+    min-height: 500px;
+    height: auto;
+  } */
+  .rmdb-movieinfo-text h1 {
+    font-size: 24px !important;
+  }
+
+.circle-bar{
+  width: 45px;
+  height: 45px;
+}
+
+
+
+.movie-plot{
+
+  height: 58%;
+}
+}

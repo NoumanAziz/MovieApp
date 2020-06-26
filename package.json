@@ -1,0 +1,42 @@
+{
+  "name": "react_movie_db_course",
+  "version": "0.2.0",
+  "private": true,
+
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "d3-ease": "^1.0.6",
+    "gh-pages": "^3.1.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-circular-progressbar": "^2.0.3",
+    "react-dom": "^16.8.6",
+    "react-fontawesome": "^1.7.1",
+    "react-move": "^6.1.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.0.1",
+    "tachyons": "^4.12.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

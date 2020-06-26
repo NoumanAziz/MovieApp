@@ -1,0 +1,11 @@
+.headernew {
+   
+    width: 100%;
+    display:  flex;
+    flex-direction:  row;
+    padding-left: 25px;
+    /* float: left; */
+  }
+  .headernew  p {
+    padding-left:  20px;
+  }

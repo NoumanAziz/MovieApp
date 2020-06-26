@@ -1,0 +1,32 @@
+.rmdb-navigation {
+  display: flex;
+  align-items: center;
+  width: %;
+  margin : 0 auto;
+  height: 50px;
+  background: #070707b6;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.rmdb-navigation-content {
+  max-width: 1280px;
+  margin: 0 auto;
+ 
+  width: 100%;
+}
+
+.rmdb-navigation-content p {
+  font-family: 'Abel', sans-serif;
+  font-size: 22px;
+  float: left;
+  color: #fff;
+  padding-right: 10px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .rmdb-navigation-content p {
+    font-size: 16px;
+  }
+}

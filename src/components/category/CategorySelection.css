@@ -1,0 +1,61 @@
+.button-bg{
+    background-color: rgb(54, 52, 52);
+    height: 100px;
+    display : flex;
+    align-items: center;
+    max-width: 1280px;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.btn-passive{
+    background-color: rgb(24, 24, 24);
+    border-radius: 20px;
+    border : 3px rgb(24, 24, 24);
+    /* margin-left: 40px; */
+    width: 160px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 1em;
+    outline-style: none;
+    cursor : pointer;
+    color: white
+}
+.btn-active{
+    background-color: rgb(3, 3, 3);
+    border-radius: 20px;
+    border : 3px rgb(0, 0, 0);
+    /* margin-left: 20px; */
+    width: 160px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 1em;
+    outline-style: none;
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(163,160,163,1);
+    -moz-box-shadow: 0px 0px 9px 1px rgba(163,160,163,1);
+    box-shadow: 0px 0px 9px 1px rgba(163,160,163,1);
+    color : white;
+cursor : pointer;
+}
+
+@media screen and (max-width: 655px) {
+    .button-bg{
+        justify-content: space-around;
+        width : 85;
+   
+    }
+    .btn-active{
+        margin-left: 10px;
+        font-weight: 200;
+        font-size: 0.9em;
+       height: auto;
+        padding: 5px;
+    }
+    .btn-passive{
+        margin-left: 10px;
+        font-weight: normal;
+        font-size: 0.9em;
+      height: auto;
+        padding: 5px;
+    }
+}
