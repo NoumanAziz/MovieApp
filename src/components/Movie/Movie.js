@@ -126,7 +126,7 @@ loadMore = () =>{
                         image = {element.poster_path? `${IMAGE_BASE_URL}${POSTER_SIZE}${element.poster_path}`: './images/no_image.jpg'}
                         movieId = {element.id}
                         movieName = {element.original_title} 
-                         {...this.props}/>
+                        rating = {element.vote_average}/>
                     )
                     }) }
                 </FourColGrid>

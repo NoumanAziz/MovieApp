@@ -1,42 +1,88 @@
+.showthumb{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    overflow: hidden;
+    background-size: 100% !important;
+    background-position:bottom;
+    
+  font-family: 'Abel', sans-serif;
+    max-height: 100%;
+    box-sizing: border-box;
+}
+.showthumb img {
+    width: 100%;
+    height: 100%;
+
+}
+.showthumb:hover {
+
+    cursor: pointer;
+
+}
+.cont{
+    position: relative;
+    background-color: transparent;
+    top: 100%;
+    height: 430px;
+    text-emphasis: bold;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    display: none;
+    overflow: hidden;
+}
+
+.met {
+    position: relative;
+    left: 30%;
+}
+.cont h4 {
+    color: white;
+    font-size: 20px;
+    /* border-radius: 5px ; */
+    /* border: 2px solid whitesmoke; */
+    /* margin: 40px 10px 10px 10px; */
+    /* background-color: #096b99; */
+    position: relative;
+    bottom: -30%;
+    margin-bottom: 0px;
+    text-align: center;
+    text-decoration: none;
+    height: 10%;
+}
+
+.cont p {
+    color: white;
+    
+    font-size: 20px;
+    
+    position: relative;
+    top: 30%;
+    right:  22%;
+
+}
+
+.showthumb:hover .cont  {
+    display: block;
+    opacity: 1;
+}
+.showthumb:hover {
+
+}
+
+.circle-bar{
+    width: 40px;
+    height: 40px;
+    margin: 10px  auto;
+  }
+
+
 .rmdb-moviethumb img {
-  width: 100%;
-  height: 100%;
-  transition: all 0.3s;
-  object-fit: cover;
-  border-radius: 20px;
-
-}
-
-.movie-name{
- 
-  background-color: rgba(0, 0, 0, 0.421);
-  position: absolute;
-
- 
-}
-
-
-
-.clickable {
-  cursor: pointer;
-
-}
-
-.clickable:hover {
-
-  background-color: rgba(0, 0, 0, 0.578);
-
-
-}
-
-/* #div2{
-  position: absolute;
-  z-index: 2;
-  visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.463);
-
-}
-
-#div2:hover{
-  visibility: visible;
-} */
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  

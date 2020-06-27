@@ -6,7 +6,7 @@ const FourColGrid = (props) => {
     const renderElements = () =>{
         const gridElements = props.children.map((element, i)=>{
             return(
-                <div key={i}  className = 'rmdb-grid-element' >
+                <div key={i}  className = 'fourcolgrid-element' >
                     {element}
                 </div>
             )
@@ -15,11 +15,11 @@ const FourColGrid = (props) => {
     }
 
     return (
-        <div className = 'rmdb-grid'>
+        <div className = 'fourcolgrid'>
              {/* {
                 props.header && !props.loading ? <h1>{props.header}</h1> :null
              } */}
-             <div className='rmdb-grid-content'>
+             <div className='fourcolgrid-grid'>
                 {renderElements()}
              </div>
         </div>

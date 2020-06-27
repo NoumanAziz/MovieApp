@@ -1,52 +1,111 @@
-.rmdb-grid h1 {
-  font-family: 'Abel', sans-serif;
-  font-size:42px;
+.fourcolgrid h1{
+    font-size: 40px;
+    font-family: 'Abel', sans-serif; 
 }
 
-.rmdb-grid-content {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 40px;
-  position: relative;
+.fourcolgrid-grid{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+}
+.fourcolgrid-element{
+
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    max-height: 290px;
+    max-width: 400px;
+    animation: animateGrid 1s;
+    overflow: hidden;
+    border-radius: 20px;
+}
+@keyframes animatedGrid {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media screen and (max-width:1150px){
+    .fourcolgrid-element{
+        max-height: 270px;
+    }
+   
+    
+}
+@media screen and (max-width:1090px){
+    .fourcolgrid-element{
+        max-height: 245px;
+    }
+   
+    
+}
+@media screen and (max-width:1000px){
+    .fourcolgrid-element{
+        max-height: 223px;
+    } 
+}
+@media screen and (max-width:940px){
+    .fourcolgrid-element{
+        max-height: 290px;
+    }
+    .fourcolgrid-grid{
+        grid-template-columns: repeat(3, auto);
+    } 
 }
 
-.rmdb-grid-element {
-  animation: animateGrid 0.5s;
-}  
 
-@keyframes animateGrid {
-  from {
-      opacity:0;
-  }
-  to {
-      opacity:1;
-  }
+@media screen and (max-width:880px){
+    .fourcolgrid-element{
+        max-height: 250px;
+    } 
 }
 
-@media screen and (max-width: 800px) {
-  .rmdb-grid-content {
-    grid-template-columns: repeat(3, 1fr);
-  }
+@media screen and (max-width:780px){
+    
+    .fourcolgrid-grid{
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+    }
+}
 
-  .rmdb-grid h1 {
-    font-size:22px;
-  }
+@media screen and (max-width:730px){
+    .fourcolgrid-grid{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    /* .fourcolgrid-element:nth-child(2n+2){
+        margin-right: 0;
+    } */
+    .fourcolgrid h1 {
+        font-size: 18px;
+    }
+    .fourcolgrid-grid{
+        grid-row-gap: 15px;
+        grid-column-gap: 15px;
+    }
+    .fourcolgrid-element{
+        max-height: 280px;
+    } 
+    
 }
-@media screen and (max-width: 600px) {
-  .rmdb-grid-content {
-    grid-template-columns: repeat(2, 1fr);
-  }
+@media screen and (max-width:520px){
+    .fourcolgrid-element{
+        max-height: 230px;
+    } 
+}
 
-  .rmdb-grid h1 {
-    font-size:20px;
-  }
+@media screen and (max-width:450px){
+    .fourcolgrid-element{
+        max-height: 200px;
+    } 
 }
-@media screen and (max-width: 375px) {
-  .rmdb-grid-content {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .rmdb-grid h1 {
-    font-size:18px;
-  }
+
+@media screen and (max-width:350px){
+    .fourcolgrid-element{
+        max-height: 175px;
+    } 
 }
+

@@ -93,16 +93,17 @@ this.setState ({
             {this.state.movies ? 
             <div className='rmdb-home-grid'>
                 <FourColGrid
-                    header = {this.state.searchTerm ? 'Search Result': 'Popular Movies'} 
+                    
                     loading = {this.state.loading}>
                     { this.state.movies.map((element,i)=>{
                     return (
                     <MovieThumb 
                         key = {i}
-                        clickable = {true}
                         image = {element.poster_path? `${IMAGE_BASE_URL}${POSTER_SIZE}${element.poster_path}`: './images/no_image.jpg'}
                         movieId = {element.id}
-                        movieName = {element.original_title}/>
+                        movieName = {element.original_title}
+                        clickable = {true}
+                        rating = {element.vote_average}/>
                     )
                     }) }
                 </FourColGrid>
